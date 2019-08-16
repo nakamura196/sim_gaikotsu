@@ -32,8 +32,8 @@ export default {
     data() {
         return {
             items: {},
-            prefix: "http://localhost:5000"
-            //prefix: "http://arctest06.dl.itc.u-tokyo.ac.jp"
+            //prefix: "http://localhost:5000"
+            prefix: "http://arctest07.dl.itc.u-tokyo.ac.jp"
         };
     },
     props: {
