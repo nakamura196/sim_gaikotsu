@@ -23,7 +23,6 @@ yarn-error.log*
 # flask
 *.npy
 *.pb
-data.json
 backend/data/
 backend/output/
 __pycache__/

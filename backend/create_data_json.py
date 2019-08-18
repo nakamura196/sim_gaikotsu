@@ -9,11 +9,19 @@ import shutil
 with open('data/features_list.json') as f:
     df = json.load(f)
 
+terms = [
+    {
+        "term": "od",
+        "label": "機械タグ"
+    }
+]
+
+for term in terms:
+    with open('data/'+term["term"]+'.json') as f:
+        term["data"] = json.load(f)
+
 with open('data/base.json') as f:
     metadata = json.load(f)
-
-with open('data/clarifais.json') as f:
-    clarifais = json.load(f)
 
 data = {}
 
@@ -24,12 +32,16 @@ for i in range(len(df)):
         obj = metadata[id]
         obj["index"] = i
 
-        if id in clarifais:
-            for yolo in clarifais[id]:
-                obj["metadata"].append({
-                    "label" : "機械タグ",
-                    "value" : yolo
-                })
+        for term in terms:
+
+            term_data = term["data"]
+
+            if id in term_data:
+                for t in term_data[id]:
+                    obj["metadata"].append({
+                        "label" : term["label"],
+                        "value" : t
+                    })
 
         data[i] = obj
 

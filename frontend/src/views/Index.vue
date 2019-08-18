@@ -29,8 +29,8 @@
 
               <br/>
 
-              <h5 class="description">&nbsp;&nbsp;本システムは東京大学総合図書館が公開する
-                <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/gaikotsu/page/home">宮武外骨蒐集資料</a>の資料を対象として、貼り込まれた資料単位での画像検索が可能なプロトタイプです。
+              <h5 class="description">&nbsp;&nbsp;本システムは明治新聞雑誌文庫が所蔵する
+                <a href="https://iiif.dl.itc.u-tokyo.ac.jp/repo/s/gaikotsu/page/home">宮武外骨蒐集資料</a>を対象として、貼り込まれた資料単位での画像検索が可能なプロトタイプです。
               </h5>
               <h5 class="description">&nbsp;&nbsp;貼り込み資料の抽出は、物体検出アルゴリズムYOLO v3を用いて、機械的に実行しています。また、
                 <a href="https://kunshujo.dl.itc.u-tokyo.ac.jp/">電子展示『&#25411;拾帖』</a>で公開されている貼り込み資料2,645件をモデルのファインチューニングに利用しています。詳細については、

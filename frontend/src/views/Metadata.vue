@@ -32,7 +32,7 @@ export default {
     data() {
         return {
             items: {},
-            //prefix: "http://localhost:5000"
+            //prefix: "http://localhost:5002"
             prefix: "http://arctest07.dl.itc.u-tokyo.ac.jp"
         };
     },
