@@ -55,7 +55,7 @@ jdcal==1.4.1
 jingtrang==0.1.2
 Jinja2==2.10.1
 jmespath==0.9.4
-joblib==0.13.2
+joblib==1.2.0
 jsonschema==3.0.2
 Keras==2.2.4
 Keras-Applications==1.0.8
